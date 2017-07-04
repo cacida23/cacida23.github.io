@@ -335,7 +335,8 @@ body{
 	margin-left:-140px;
 }
 .page-5-1 .img_2 {
-	height:auto;width:260px;
+	height:auto;
+	width:260px;
 	position:absolute;
 	left:50%;
 	top:67%;
