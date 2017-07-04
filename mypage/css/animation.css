@@ -1,0 +1,124 @@
+/*定义8个基本线性动画*/
+/*出场动画*/
+.moveToTop{
+   animation: moveToTop 0.6s ease both ;
+}
+.moveToRight{
+    animation: moveToRight 0.6s ease both ;
+}
+.moveToBottom{
+    animation: moveToBottom 0.6s ease both ;
+}
+.moveToLeft{
+    animation: moveToLeft 0.6s ease both ;
+}
+
+/*入场动画*/
+.moveFormTop{
+    animation: moveFormTop 0.6s ease both ;
+}
+.moveFormRight{
+    animation: moveFormRight 0.6s ease both ;
+}
+.moveFormBottom{
+    animation: moveFormBottom 0.6s ease both ;
+}
+.moveFormLeft{
+    animation: moveFormLeft 0.6s ease both ;
+}
+
+/*设置基本线性动画的动画效果*/
+/*出场动画*/
+@keyframes moveToTop {
+    from{}
+    to{transform: translateY(-100%)}
+}
+@keyframes moveToRight {
+    from{}
+    to{transform: translateX(100%)}
+}
+@keyframes moveToBottom {
+    from{}
+    to{transform: translateY(100%)}
+}
+@keyframes moveToLeft {
+    from{}
+    to{transform: translateX(-100%)}
+}
+
+
+/*入场动画*/
+@keyframes moveFormTop {
+    from{transform: translateY(-100%)}
+    to{}
+}
+@keyframes moveFormRight {
+    from{transform: translateX(100%)}
+    to{}
+}
+@keyframes moveFormBottom {
+    from{transform: translateY(100%)}
+    to{}
+}
+@keyframes moveFormLeft {
+    from{transform: translateX(-100%)}
+    to{}
+}
+
+/*个性动画的定义*/
+/*下标三角的动画*/
+.icon-toUp{
+    animation: icon-toUp 1.5s ease both infinite;
+}
+@keyframes icon-toUp {
+    0%{transform: translateY(100%);opacity: 0}
+    50%{opacity: 1}
+    100%{transform: translateY(-100%);opacity: 0}
+}
+
+/*从下到大的动画*/
+.moveFormSmall{
+    animation: moveFormSmall 0.6s both ease ;
+}
+@keyframes moveFormSmall {
+    from{transform: scale(0.4);opacity: 0.3}
+    to{}
+}
+
+/*不好好动，瞎弹的效果*/
+.upAndDown{
+    animation: upAndDown 0.6s both ease ;
+}
+@keyframes upAndDown {
+    0%{transform: translateY(-60%);opacity: 0.3}
+    10%{opacity: 0.7}
+    50%{transform: translateY(20%);opacity: 0.8}
+    80%{transform: translateY(-20%);opacity: 0.9}
+    100%{transform: opacity: 1}
+}
+
+/*旋转归位效果*/
+.fromRotate{
+    animation: fromRotate 0.6s both ease ;
+}
+@keyframes fromRotate {
+    from{transform: rotateY(90deg);opacity: 0.3}
+    to{}
+}
+
+/*边绕X轴 边掉下来*/
+.rotatexAndFromTop{
+    animation: rotatexAndFromTop 0.6s both ease ;
+}
+@keyframes rotatexAndFromTop {
+    from{transform: rotateX(45deg) translateY(-80%);opacity: 0.3}
+    to{}
+}
+/*从小到大旋转归位*/
+.rotatexAndFromSmall{
+    animation: rotatexAndFromSmall 0.6s both ease ;
+}
+@keyframes rotatexAndFromSmall {
+    from{transform: rotateX(45deg) scale(0.4);opacity: 0.3}
+    to{}
+}
