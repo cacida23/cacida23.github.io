@@ -24,42 +24,50 @@
 	<div id="content">
 		<div id="code">
 			<span class="comments"></span><br />
-			<span class="space"/><span class="comments">*2013—02-14,</span><br />
-			<span class="space"/><span class="comments">*2013-02-28.</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			Boy name = <span class="keyword">Mr</span> LI<br />
-			Girl name = <span class="keyword">Mrs</span> ZHANG<br />
-			<span class="comments">// Fall in love river. </span><br />
-			The boy love the girl;<br />
-			<span class="comments">// They love each other.</span><br />
-			The girl loved the boy;<br />
-			<span class="comments">// AS time goes on.</span><br />
-			The boy can not be separated the girl;<br />
-			<span class="comments">// At the same time.</span><br />
-			The girl can not be separated the boy;<br />
-			<span class="comments">// Both wind and snow all over the sky.</span><br />
-			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
-			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
-			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
-			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
-			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
-			<span class="placeholder"/>The boy has but one dream;<br />
-			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<span class="comments">I love you </span><br />
+			<span class="comments">Not only for what you are， </span><br />
+			<span class="comments">But for what I am </span><br />
+			<span class="comments">When I am with you. </span><br /><br/>
+			<span class="comments">I love you</span><br />
+			<span class="comments">Not only for what</span><br />
+			<span class="comments">You have made of yourselft</span><br />
+			<span class="comments">But for what</span><br />
+			<span class="comments">You are making of me. </span><br /><br>
+			<span class="comments">I love you </span><br />
+			<span class="comments">For the part of me  </span><br />
+			<span class="comments">That you bring out.</span><br /><br>
+			<span class="comments">I love you</span><br />
+			<span class="comments">For putting your hand </span><br />
+			<span class="comments">Into my heaped-up heart</span><br />
+			<span class="comments">And passing over</span><br />
+			<span class="comments">All the foolish, weak things </span><br />
+			<span class="comments">That you can’t help </span><br />
+			<span class="comments">Dimly seeing there, </span><br />
+			<span class="comments">And for drawing out </span><br />
+			<span class="comments">Into the light </span><br />
+			<span class="comments">All the beautiful belongings  </span><br />
+			<span class="comments">That no one else had looked</span><br />
+			<span class="comments">Quite far enough to find </span><br/><br/>
+			<span class="keyword">不知 不觉 <span class="keyword"></span><br />
+			<span class="keyword">我们已经走过 两个秋天两个春天</span><br />
+<span class="keyword">何其幸运，明媚如你，一直在我身边</span><br />
+	<span class="keyword">烜儿，我爱你</span><br />
+			<span class="keyword"/>生日快乐，我最好的烜儿<br />
 			<br>
 			<br>
-			I want to say:<br />
-			Baby, I love you forever;<br />
+			<span class="comments">	What I want to say:</span><br />
+			<span class="comments">Baby, I love you forever; </span><br/><br/>
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					亲爱的，这是我们相爱在一起的时光。
+					不知不觉，我们已经走了这么远
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
-					爱你直到永永远远。<br/>
-					<div class="signature">- 李先生</div>
+					让我们爱的时钟轮转，一直，到，永远<br/>
+					<div class="signature">- 爱你的刘佳</div>
 				</div>
 			</div>
 		</div>
@@ -88,12 +96,12 @@ if (!document.createElement('canvas').getContext) {
 } else {
   setTimeout(function () {
     startHeartAnimation()
-  }, 5000)
+  }, 60000)
 
   timeElapse(together)
   setInterval(function () {
     timeElapse(together)
-  }, 500)
+  }, 800)
 
   adjustCodePosition()
   $('#code').typewriter()
@@ -103,7 +111,12 @@ if (!document.createElement('canvas').getContext) {
   window.onload = function () {
     if (window.devicePixelRatio && window.devicePixelRatio >= 2) {
       document.getElementsByTagName('body')[0].setAttribute('dpr', '2')
-    }
+  }
+  let i = 0
+  setInterval(function a () {
+  i++
+  console.log(i)
+}, 1000)
 }
 </script>
 </body>
