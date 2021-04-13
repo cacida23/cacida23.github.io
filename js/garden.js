@@ -142,20 +142,20 @@
 
 	    Garden.options = {
 	        petalCount: {
-	            min: 8,
-	            max: 15
+	            min: 3,
+	            max: 3
 	        },
 	        petalStretch: {
-	            min: 0.1,
+	            min: 3,
 	            max: 3
 	        },
 	        growFactor: {
-	            min: 0.1,
+	            min: 1,
 	            max: 1
 	        },
 	        bloomRadius: {
-	            min: 8,
-	            max: 10
+	            min: 1,
+	            max: 1
 	        },
 	        density: 10,
 	        growSpeed: 1000 / 60,
@@ -192,8 +192,8 @@
 			var b = Math.round(Garden.random(bmin, bmax));
 			var limit = 5;
 			if (Math.abs(r - g) <= limit && Math.abs(g - b) <= limit && Math.abs(b - r) <= limit) {
-				return Garden.rgba(rmin, rmax, gmin, gmax, bmin, bmax, a);
+				return Garden.rgba(255, 0, 0, 1);
 			} else {
-				return Garden.rgba(r, g, b, a);
+				return Garden.rgba(255, 0, 0, 1);
 			}
 	    };
