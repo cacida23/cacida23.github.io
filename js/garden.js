@@ -2,6 +2,7 @@
 	        this.x = x;
 	        this.y = y;
 	    };
+		console.log(test);
 		
 	    Vector.prototype = {
 	        rotate: function (theta) {
